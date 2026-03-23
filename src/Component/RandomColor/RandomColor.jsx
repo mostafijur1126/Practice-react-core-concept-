@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function RandonColor() {
+export default function RandomColor() {
   const [color, setColor] = useState('#ffffff');
 
   const hex = '0123456789ABCDEF';
@@ -15,8 +15,15 @@ export default function RandonColor() {
   };
   return (
     <div>
-      <div style={{ backgroundColor: color, height: '100vh' }}>
-        <h1>Random Clor</h1>
+      <div
+        style={{
+          backgroundColor: color,
+          height: '25vh',
+          padding: '20px',
+          margin: '20px',
+        }}
+      >
+        <h1>Random Color</h1>
         <button onClick={changeColor}>Generate color</button>
       </div>
     </div>

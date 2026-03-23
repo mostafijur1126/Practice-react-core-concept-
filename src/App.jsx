@@ -1,14 +1,16 @@
 import {} from 'react';
 import './App.css';
 import Counter from './Component/Counter/Counter';
-import RandonColor from './Component/RandomColor/RandonColor';
+import RandomColor from './Component/RandomColor/RandomColor';
+import ToDo from './Component/SimpleTodoApp/ToDo';
 
 function App() {
   // console.log(count);
   return (
     <>
       <Counter></Counter>
-      <RandonColor></RandonColor>
+      <RandomColor></RandomColor>
+      <ToDo></ToDo>
     </>
   );
 }
